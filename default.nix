@@ -15,6 +15,17 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
+
+  firefox-gnome-theme = pkgs.callPackage ./pkgs/firefox-gnome-theme { };
+  arkenfox = pkgs.callPackage ./pkgs/arkenfox { };
+  #librewolf = pkgs.callPackage ./pkgs/librewolf { };
+
+  #mutter-performance = pkgs.callPackage ./pkgs/mutter-performance { };
+  #mutter-fractional-scaling = pkgs.callPackage ./pkgs/mutter-fractional-scaling { };
+  #mutter-improved = pkgs.callPackage ./pkgs/mutter-improved { };
+  
+  #gnome-settings-center-fractional-scaling = pkgs.callPackage ./pkgs/gnome-settings-center-fractional-scaling { };
+
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
